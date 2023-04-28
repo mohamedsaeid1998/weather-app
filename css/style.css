@@ -1,0 +1,93 @@
+body{
+  max-height: 100vh;
+  background-size: cover;
+  transition: 3s ease-in-out;
+}
+
+.searchCon{
+  position: relative;
+}
+
+.searching{
+  border: none !important;
+  background-color:#6a71786c;
+
+}
+
+.smSearching{
+  position: absolute;
+  top: 52px;
+  right:7px;
+}
+
+.fHead{
+background-color: #7286D3;
+}
+
+.fBottom{
+  background-color: #8EA7E9;
+  height: 273px;
+}
+
+.sHead{
+  background-color: #F49D1A;
+}
+.sBottom{
+  background-color: #FFE15D;
+}
+
+.tHead{
+  background-color: #C0EEF2;
+}
+.tBottom{
+  background-color: #E9F8F9;
+}
+
+.card{
+  border:none !important;
+}
+
+footer{
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.circle{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.circleA{
+position: relative;
+left: 50%;
+top: 35%;
+transform: translate(-50%,-50%);
+color: aqua;
+animation: alternate coloring 5s ease-in infinite;
+}
+
+
+@keyframes coloring {
+  0%{color: white;}
+  25%{color: aqua;}
+  50%{color: gold;}
+  75%{color: magenta;}
+  100%{color: blue;}
+}
+
+.nav-link{
+  color: #fff;
+  transition:color 0.5s ;
+}
+
+.navbar-brand{
+  color: #fff;
+  transition:color 0.5s ;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+  color: #537FE7;
+}
+
