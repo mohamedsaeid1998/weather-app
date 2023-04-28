@@ -17,10 +17,10 @@ searching.addEventListener("input", function () {
   getNews(searching.value)
 })
 
-setInterval(() => {
-  let randomNumber = Math.floor(Math.random() * array.length);
-  body.style.backgroundImage=`url("../img/${array[randomNumber]}")`
-}, 5000);
+// setInterval(() => {
+//   let randomNumber = Math.floor(Math.random() * array.length);
+//   body.style.backgroundImage=`url("../img/${array[randomNumber]}")`
+// }, 5000);
 /**************FUNCTIONS****************/
 async function getNews(place) {
   let myData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${place}&days=3`)
